@@ -1,0 +1,6 @@
+On my local machine, I've used: 
+python 3.8, 
+tensorflow 2.2, 
+streamlit 0.61.0, 
+and flask 1.1.2 
+as well as with with python 3.6.8, tf 2.1, streamlit 0.60 and flask 1.1.2
