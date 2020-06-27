@@ -1,4 +1,4 @@
-# Project Title
+# MNIST-Dataset-Visualization-Webapp
 
 The MNIST handwritten digit classification problem is a standard dataset used in computer vision and deep learning.
 
@@ -8,77 +8,65 @@ In this project, you will discover how to develop a convolutional neural network
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+On my local machine, I've used: 
+python 3.8, 
+tensorflow 2.2, 
+streamlit 0.61.0, 
+and flask 1.1.2 
+as well as python 3.6.8, tf 2.1, streamlit 0.60 and flask 1.1.2
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Install the above dependencies via pip. And run the ML flask server from the command prompt before executing the streamlit application.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Run the ML flask server from the appropriate directory.
 
 ```
-until finished
+$directoryName/Path/ python3 ml_server.py
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Execute the streamlit application
 
 ```
-Give an example
+$directoryName/Path/ streamlit run app.py
 ```
 
-### And coding style tests
+This will get the frontend of the application containing the ML model running.
 
-Explain what these tests test and why
+## Testing the application on a random input
 
-```
-Give an example
-```
+Press the "Get random prediction" button to test the app against a random entry in the dataset. 
 
-## Deployment
+### Break down and analysis
 
-Add additional notes about how to deploy this on a live system
+The application visualizes the outputs of each layer for a given input and predicts the handwritten digit to a certain degree of confidence which is highlighted in the final layer. The lightness in colour denotes a higher degree of confidence in prediction and thereby ensures better accuracy. 
+
+
+### Sample working and output 
+
+![alt text](http://url/to/img.png)
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Streamlit](https://docs.streamlit.io/en/stable/) - The web framework used.
+* [Keras](https://keras.io/) - Used to code and train the neural network. 
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Creation of model server.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Please feel free to fork the above repository and open an issue first before sending a pull request.
+ 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+**Anmol Pant** - *Initial work* - (https://github.com/anmolpant)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
@@ -86,7 +74,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Shoutout to the deeplearning.ai specialization on coursera for their easy to grasp and hands on courses.
 
